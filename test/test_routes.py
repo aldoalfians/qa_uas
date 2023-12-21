@@ -22,5 +22,5 @@ def test_post_cart(client):
     cart_items = [{"product_id": 6, "qty": 1}]
     payload = {"coupon_code": coupon_code, "shipping_fee": shipping_fee, "cart_items": cart_items}
     response = client.post(url, json=payload)
-    assert response.status_code == 200
+    assert response.status_code == 100
    
